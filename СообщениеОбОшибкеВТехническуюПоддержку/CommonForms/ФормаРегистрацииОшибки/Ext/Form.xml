@@ -1,0 +1,883 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Форма регистрации ошибки</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockWholeInterface</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<CommandBarLocation>None</CommandBarLocation>
+	<ShowTitle>false</ShowTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="ЗаголовокСообщенияВТП" id="32">
+			<HorizontalStretch>true</HorizontalStretch>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пожалуйста, опишите проблему и последовательность действий, которая привела к ошибке:</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ЗаголовокСообщенияВТПКонтекстноеМеню" id="33"/>
+			<ExtendedTooltip name="ЗаголовокСообщенияВТПРасширеннаяПодсказка" id="34"/>
+		</LabelDecoration>
+		<InputField name="СообщениеВТП" id="119">
+			<DataPath>СообщениеВТП</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<AutoMaxHeight>false</AutoMaxHeight>
+			<MultiLine>true</MultiLine>
+			<ExtendedEdit>true</ExtendedEdit>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация об ошибке</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="СообщениеВТПКонтекстноеМеню" id="118"/>
+			<ExtendedTooltip name="СообщениеВТПРасширеннаяПодсказка" id="123"/>
+		</InputField>
+		<UsualGroup name="ГруппаНастроекОтправки" id="116">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настроек отправки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настроек отправки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНастроекОтправкиРасширеннаяПодсказка" id="115"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаПодробныйТекстОшибки" id="85">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа подробный текст ошибки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа подробный текст ошибки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПодробныйТекстОшибкиРасширеннаяПодсказка" id="84"/>
+					<ChildItems>
+						<CheckBoxField name="ВключитьВОтчетПодробныйТекстОшибки" id="114">
+							<DataPath>ВключитьВОтчетПодробныйТекстОшибки</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВключитьВОтчетПодробныйТекстОшибкиКонтекстноеМеню" id="87"/>
+							<ExtendedTooltip name="ВключитьВОтчетПодробныйТекстОшибкиРасширеннаяПодсказка" id="86"/>
+						</CheckBoxField>
+						<LabelDecoration name="ДекорацияПодробныйТекстОшибки" id="21">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>подробный текст ошибки</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="ДекорацияПодробныйТекстОшибкиКонтекстноеМеню" id="22"/>
+							<ExtendedTooltip name="ДекорацияПодробныйТекстОшибкиРасширеннаяПодсказка" id="23"/>
+							<Events>
+								<Event name="Click">ДекорацияПодробныйТекстОшибкиНажатие</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаСнимокОконПриложения" id="27">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа снимок окон приложения</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа снимок окон приложения</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСнимокОконПриложенияРасширеннаяПодсказка" id="28"/>
+					<ChildItems>
+						<CheckBoxField name="ВключитьВОтчетСнимокОконПриложения" id="24">
+							<DataPath>ВключитьВОтчетСнимокОконПриложения</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВключитьВОтчетСнимокОконПриложенияКонтекстноеМеню" id="25"/>
+							<ExtendedTooltip name="ВключитьВОтчетСнимокОконПриложенияРасширеннаяПодсказка" id="26"/>
+						</CheckBoxField>
+						<LabelDecoration name="ДекорацияСнимокОконПриложения" id="29">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>снимок окон приложения</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="ДекорацияСнимокОконПриложенияКонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="ДекорацияСнимокОконПриложенияРасширеннаяПодсказка" id="31"/>
+							<Events>
+								<Event name="Click">ДекорацияСнимокОконПриложенияНажатие</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаИмяПользователя" id="35">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа имя пользователя</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа имя пользователя</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаИмяПользователяРасширеннаяПодсказка" id="36"/>
+					<ChildItems>
+						<CheckBoxField name="ВключитьВОтчетИмяПользователя" id="37">
+							<DataPath>ВключитьВОтчетИмяПользователя</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВключитьВОтчетИмяПользователяКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="ВключитьВОтчетИмяПользователяРасширеннаяПодсказка" id="39"/>
+						</CheckBoxField>
+						<LabelDecoration name="ДекорацияИмяПользователя" id="40">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>имя пользователя</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="ДекорацияИмяПользователяКонтекстноеМеню" id="41"/>
+							<ExtendedTooltip name="ДекорацияИмяПользователяРасширеннаяПодсказка" id="42"/>
+							<Events>
+								<Event name="Click">ДекорацияИмяПользователяНажатие</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаСведенияОбИспользуемомПриложении" id="43">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа сведения об используемом приложении</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа сведения об используемом приложении</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСведенияОбИспользуемомПриложенииРасширеннаяПодсказка" id="44"/>
+					<ChildItems>
+						<CheckBoxField name="ВключитьВОтчетСведенияОбИспользуемомПриложении" id="45">
+							<DataPath>ВключитьВОтчетСведенияОбИспользуемомПриложении</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВключитьВОтчетСведенияОбИспользуемомПриложенииКонтекстноеМеню" id="46"/>
+							<ExtendedTooltip name="ВключитьВОтчетСведенияОбИспользуемомПриложенииРасширеннаяПодсказка" id="47"/>
+						</CheckBoxField>
+						<LabelDecoration name="ДекорацияСведенияОбИспользуемомПриложении" id="48">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>сведения об используемом приложении</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="ДекорацияСведенияОбИспользуемомПриложенииКонтекстноеМеню" id="49"/>
+							<ExtendedTooltip name="ДекорацияСведенияОбИспользуемомПриложенииРасширеннаяПодсказка" id="50"/>
+							<Events>
+								<Event name="Click">ДекорацияСведенияОбИспользуемомПриложенииНажатие</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаИнформацияОКомпьютере" id="51">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа информация о компьютере</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа информация о компьютере</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаИнформацияОКомпьютереРасширеннаяПодсказка" id="52"/>
+					<ChildItems>
+						<CheckBoxField name="ВключитьВОтчетИнформациюОКомпьютере" id="53">
+							<DataPath>ВключитьВОтчетИнформациюОКомпьютере</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВключитьВОтчетИнформациюОКомпьютереКонтекстноеМеню" id="54"/>
+							<ExtendedTooltip name="ВключитьВОтчетИнформациюОКомпьютереРасширеннаяПодсказка" id="55"/>
+						</CheckBoxField>
+						<LabelDecoration name="ДекорацияИнформацияОКомпьютере" id="56">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>информацию о компьютере</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="ДекорацияИнформацияОКомпьютереКонтекстноеМеню" id="57"/>
+							<ExtendedTooltip name="ДекорацияИнформацияОКомпьютереРасширеннаяПодсказка" id="58"/>
+							<Events>
+								<Event name="Click">ДекорацияИнформацияОКомпьютереНажатие</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаСсылка" id="92">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ссылка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСсылкаРасширеннаяПодсказка" id="93"/>
+					<ChildItems>
+						<CheckBoxField name="ВключитьВОтчетСсылку" id="94">
+							<DataPath>ВключитьВОтчетСсылку</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВключитьВОтчетСсылкуКонтекстноеМеню" id="95"/>
+							<ExtendedTooltip name="ВключитьВОтчетСсылкуРасширеннаяПодсказка" id="96"/>
+						</CheckBoxField>
+						<LabelDecoration name="ДекорацияСсылка" id="97">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ссылку на объект</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="ДекорацияСсылкаКонтекстноеМеню" id="98"/>
+							<ExtendedTooltip name="ДекорацияСсылкаРасширеннаяПодсказка" id="99"/>
+							<Events>
+								<Event name="Click">ДекорацияСсылкаНажатие</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПриложитьФайл" id="59">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа приложить файл</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа приложить файл</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПриложитьФайлРасширеннаяПодсказка" id="60"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияПриложитьФайл" id="61">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Приложить файл...</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="ДекорацияПриложитьФайлКонтекстноеМеню" id="62"/>
+							<ExtendedTooltip name="ДекорацияПриложитьФайлРасширеннаяПодсказка" id="63"/>
+							<Events>
+								<Event name="Click">ДекорацияПриложитьФайлНажатие</Event>
+							</Events>
+						</LabelDecoration>
+						<Table name="ПриложенныеФайлы" id="64">
+							<Representation>List</Representation>
+							<Visible>false</Visible>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<HeightControlVariant>UseContentHeight</HeightControlVariant>
+							<AutoMaxRowsCount>false</AutoMaxRowsCount>
+							<MaxRowsCount>5</MaxRowsCount>
+							<Header>false</Header>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<VerticalStretch>false</VerticalStretch>
+							<DataPath>ПриложенныеФайлы</DataPath>
+							<RowPictureDataPath>ПриложенныеФайлы.Picture</RowPictureDataPath>
+							<Font ref="style:NormalTextFont" kind="StyleItem" scale="90"/>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>CancelSearch</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>CheckAll</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>EndEdit</ExcludedCommand>
+								<ExcludedCommand>Find</ExcludedCommand>
+								<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+								<ExcludedCommand>MoveDown</ExcludedCommand>
+								<ExcludedCommand>MoveUp</ExcludedCommand>
+								<ExcludedCommand>Pickup</ExcludedCommand>
+								<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+								<ExcludedCommand>SelectAll</ExcludedCommand>
+								<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+								<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+								<ExcludedCommand>SortListAsc</ExcludedCommand>
+								<ExcludedCommand>SortListDesc</ExcludedCommand>
+								<ExcludedCommand>UncheckAll</ExcludedCommand>
+							</CommandSet>
+							<ContextMenu name="ПриложенныеФайлыКонтекстноеМеню" id="65"/>
+							<AutoCommandBar name="ПриложенныеФайлыКоманднаяПанель" id="66">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПриложенныеФайлыРасширеннаяПодсказка" id="67"/>
+							<SearchStringAddition name="ПриложенныеФайлыСтрокаПоиска" id="68">
+								<AdditionSource>
+									<Item>ПриложенныеФайлы</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПриложенныеФайлыСтрокаПоискаКонтекстноеМеню" id="69"/>
+								<ExtendedTooltip name="ПриложенныеФайлыСтрокаПоискаРасширеннаяПодсказка" id="70"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПриложенныеФайлыСостояниеПросмотра" id="71">
+								<AdditionSource>
+									<Item>ПриложенныеФайлы</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПриложенныеФайлыСостояниеПросмотраКонтекстноеМеню" id="72"/>
+								<ExtendedTooltip name="ПриложенныеФайлыСостояниеПросмотраРасширеннаяПодсказка" id="73"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПриложенныеФайлыУправлениеПоиском" id="74">
+								<AdditionSource>
+									<Item>ПриложенныеФайлы</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПриложенныеФайлыУправлениеПоискомКонтекстноеМеню" id="75"/>
+								<ExtendedTooltip name="ПриложенныеФайлыУправлениеПоискомРасширеннаяПодсказка" id="76"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">ПриложенныеФайлыПриИзменении</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ПриложенныеФайлыЗначение" id="77">
+									<DataPath>ПриложенныеФайлы.Value</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПриложенныеФайлыЗначениеКонтекстноеМеню" id="78"/>
+									<ExtendedTooltip name="ПриложенныеФайлыЗначениеРасширеннаяПодсказка" id="79"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<LabelDecoration name="ДекорацияРазмерПриложенныхФайлов" id="80">
+							<Visible>false</Visible>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация размер приложенных файлов</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияРазмерПриложенныхФайловКонтекстноеМеню" id="81"/>
+							<ExtendedTooltip name="ДекорацияРазмерПриложенныхФайловРасширеннаяПодсказка" id="82"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаБлок" id="100">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа блок</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа блок</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаБлокРасширеннаяПодсказка" id="101"/>
+					<ChildItems>
+						<InputField name="ФункциональныйБлок" id="102">
+							<DataPath>ФункциональныйБлок</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>12</MaxWidth>
+							<ContextMenu name="ФункциональныйБлокКонтекстноеМеню" id="103"/>
+							<ExtendedTooltip name="ФункциональныйБлокРасширеннаяПодсказка" id="104"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаТема" id="105">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа тема</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа тема</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<United>false</United>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаТемаРасширеннаяПодсказка" id="106"/>
+					<ChildItems>
+						<InputField name="Тема" id="107">
+							<DataPath>Тема</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<MultiLine>true</MultiLine>
+							<InputHint>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дополнительная информация для технического специалиста</v8:content>
+								</v8:item>
+							</InputHint>
+							<ContextMenu name="ТемаКонтекстноеМеню" id="108"/>
+							<ExtendedTooltip name="ТемаРасширеннаяПодсказка" id="109"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПодвал" id="88">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подвал</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подвал</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПодвалРасширеннаяПодсказка" id="89"/>
+			<ChildItems>
+				<Button name="СохранитьНаДиск" id="90">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.СохранитьНаДиск</CommandName>
+					<ExtendedTooltip name="СохранитьНаДискРасширеннаяПодсказка" id="91"/>
+				</Button>
+				<Button name="СоздатьСообщение" id="112">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.СоздатьСообщение</CommandName>
+					<ExtendedTooltip name="СоздатьСообщениеРасширеннаяПодсказка" id="113"/>
+				</Button>
+				<Button name="ОтправитьВТП" id="110">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОтправитьВТП</CommandName>
+					<BackColor>#FFE100</BackColor>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+					<ExtendedTooltip name="ОтправитьВТПРасширеннаяПодсказка" id="111"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СообщениеВТП" id="117">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>300</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВключитьВОтчетПодробныйТекстОшибки" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить в отчет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВключитьВОтчетСнимокОконПриложения" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить в отчет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВключитьВОтчетИмяПользователя" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить в отчет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВключитьВОтчетСведенияОбИспользуемомПриложении" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить в отчет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВключитьВОтчетИнформациюОКомпьютере" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить в отчет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПриложенныеФайлы" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приложенные файлы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="ОтчетОбОшибкеАрхив" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет об ошибке архив</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПодробныйТекстОшибки" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подробный текст ошибки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗначениеПодробныйТекстОшибки" id="120">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Значение подробный текст ошибки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗначениеИмяПользователя" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Значение имя пользователя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗначениеСведенияОбИспользуемомПриложении" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Значение сведения об используемом приложении</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗначениеИнформацияОКомпьютере" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Значение информация о компьютере</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КаталогДляСохраненияАрхива" id="83">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог для сохранения архива</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КаталогФайлов" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог файлов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СкриншотХранилищеЗначения" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скриншот хранилище значения</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ЗначениеСписокНавигационныхСсылок" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Значение список навигационных ссылок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВключитьВОтчетСсылку" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить в отчет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ФункциональныйБлок" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Блок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.тн_ФункциональныеБлокиСистемы</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="Тема" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тема</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>150</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ВызовБезОшибки" id="121">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вызов без ошибки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭлектроннаяПочтаТекущегоПользователя" id="122">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Электронная почта текущего пользователя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>200</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СохранитьНаДиск" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить на диск</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить на диск</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьНаДиск</Action>
+		</Command>
+		<Command name="СоздатьСообщение" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать сообщение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать сообщение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьСообщение</Action>
+		</Command>
+		<Command name="ОтправитьВТП" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить в ТП</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отправить в службу технической поддержки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтправитьВТП</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="ПодробныйТекстОшибки">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>
